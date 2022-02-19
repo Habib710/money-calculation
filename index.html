@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Calculations</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <section class="container  mt-0 py-2">
+        <div class=" text-center my-3">
+            <h1 style="color: #2d7db3;  font-weight: 700;">Money Calculations</h1>
+        </div>
+        <section class="row mt-3">
+
+            <!-- ........img div................. -->
+
+            <div class="col-md-7 g-0 "><img class="w-100" height="725PX" src="img/111.png" alt="">
+            </div>
+
+
+            <!--................input div................. -->
+
+
+            <div class="col-md-5 text-center g-0    " style="background-color: #abcee4;">
+                <div>
+                    <h5 class="my-4 ">Income</h5>
+
+                    <span class="my-3 fw-bolder">Income :</span> <input id="income-input"
+                        class="border-0 input-style input" type="number" min="0">
+                    <h5 class=" mt-4 mb-1">Expenses</h5> <br>
+                    <span class="my-4 fw-bold">Foods :</span> <input id="food-input" class="border-0 input-style  input"
+                        type="number" min="0"> <br> <br>
+                    <span class="my-4 fw-bold"> Rents :</span> <input id="rent-input"
+                        class="border-0 input-style  input" type="number" min="0"> <br>
+                    <p id="rent-error" class="error">input a number to Rent</p> <br>
+                    <span class="my-xl-4 fw-bold">Other:</span> <input id="cloth-input"
+                        class="border-0 input-style  input" type="number" min="0"> <br> <br>
+
+                    <p id="input-error" class="error">Opps !! The negative value is not allowed </p>
+
+                    <button id="cal-btn" class=" button-style">Calculate</button>
+                    <br>
+                    <p id="error-2" class="error">Opps!! Your income is less than your Expenses!
+                    </p>
+                    <br>
+
+                    <P class="total">Total Expenses: $ <span id="total-exp">0000</span> </P>
+
+                    <p class="total">Balance: $ <span id="balance">0000</span> </p>
+                    <p class="fw-bold"> Save : <input id="save" class="border-0 input-style " type="number" min="0"
+                            style="width: 75px;"> % <button id="btn-save" class="button-style">save</button></p>
+                    <p id="error-3" class="error"> Your can't save more then your Balance!"
+                    </p>
+
+                    <P class="total">Saving Amount: $ <span id="saving">0000</span> </P>
+                    <P class="total">Remaining Balance: $ <span id="remaining">0000</span> </P>
+
+
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- .......................script................... -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <script src="js/money.js"></script>
+
+</body>
+
+</html>

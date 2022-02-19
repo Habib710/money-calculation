@@ -1,0 +1,33 @@
+.total {
+    font-weight: 850;
+    font-size: 19px;
+}
+
+/* ............button...................... */
+
+.button-style {
+    background-color: #386a99;
+    color: azure;
+    font-weight: 600;
+    font-size: 17px;
+
+    border: 2px solid white;
+    padding: 5PX 25PX;
+    border-radius: 8px;
+
+}
+
+/*.................... input style............................. */
+
+.input-style {
+
+    background-color: #ffffff;
+    height: 35px;
+}
+
+.error {
+    font-weight: 650;
+    color: rgb(199, 23, 0);
+    font-size: 18px;
+    display: none;
+}
